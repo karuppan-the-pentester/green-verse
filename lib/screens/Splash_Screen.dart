@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_slider/introduction_slider.dart';
 import 'package:greenverse/constants/images_Var.dart';
-import './LoginPage.dart';
+import './Profile_Page.dart';
 
 class Splash_Screen extends StatelessWidget {
   const Splash_Screen({super.key});
@@ -143,7 +143,7 @@ class Splash_Screen extends StatelessWidget {
       ],
       done: Done(
         child: Icon(Icons.done),
-        home: LoginPage(),
+        home: Profile_Page(),
       ),
       next: Next(
         child: Icon(
