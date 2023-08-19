@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:greenverse/screens/Splash_Screen.dart';
+import 'package:introduction_slider/introduction_slider.dart';
 
-void main() => runApp(const MyApp());
+
+void main() => runApp(MaterialApp(home: MyApp()));
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       theme: ThemeData.light(useMaterial3: true),
-      home: SplashScreen(),
+      home: Splash_Screen(),
     );
   }
 }
