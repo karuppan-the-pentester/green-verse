@@ -81,15 +81,18 @@ class GVProfilePage extends StatelessWidget {
                 fontSize: 22,
                 fontWeight: FontWeight.w600,
                 color: Color(0xff000000),
-                height: 22/18,
+                height: 22 / 18,
               ),
               textAlign: TextAlign.left,
             ),
             IconButton(
               onPressed: () {
-
+                // Handle settings icon press
               },
-              icon: const Icon(Icons.settings, size: 30.0,),
+              icon: const Icon(
+                Icons.settings,
+                size: 30.0,
+              ),
             ),
           ],
         ),
@@ -109,7 +112,10 @@ class GVProfilePage extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        ProfileStatWidget(count: '10', label: 'Followers',),
+                        ProfileStatWidget(
+                          count: '10',
+                          label: 'Followers',
+                        ),
                         ProfileStatWidget(count: '20', label: 'Following'),
                         ProfileStatWidget(count: '50', label: 'GCoins'),
                       ],
@@ -146,9 +152,7 @@ class GVProfilePage extends StatelessWidget {
               child: Container(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {
-
-                  },
+                  onPressed: () {},
                   style: ElevatedButton.styleFrom(
                     primary: Colors.green,
                     shape: RoundedRectangleBorder(
@@ -169,8 +173,6 @@ class GVProfilePage extends StatelessWidget {
                 ),
               ),
             ),
-
-
 
             const Divider(),
             Container(
@@ -212,6 +214,23 @@ class GVProfilePage extends StatelessWidget {
                     );
                   }
                 },
+              ),
+            ),
+            SizedBox(height: 90),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+
+              child: Align(
+                alignment: Alignment.bottomRight,
+
+                child: FloatingActionButton(
+
+                  onPressed: () {
+                    // Handle creating a new post
+                  },
+                  backgroundColor: Colors.green,
+                  child: const Icon(Icons.add, color: Colors.white),
+                ),
               ),
             ),
           ],
