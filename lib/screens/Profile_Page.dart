@@ -100,7 +100,7 @@ class GVProfilePage extends StatelessWidget {
           children: [
             const SizedBox(height: 20.0),
             const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16.0),
+              padding: EdgeInsets.symmetric(horizontal: 12.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -109,9 +109,9 @@ class GVProfilePage extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        ProfileStatWidget(count: '100', label: 'Posts'),
-                        ProfileStatWidget(count: '1M', label: 'Followers'),
-                        ProfileStatWidget(count: '500', label: 'Following'),
+                        ProfileStatWidget(count: '10', label: 'Followers',),
+                        ProfileStatWidget(count: '20', label: 'Following'),
+                        ProfileStatWidget(count: '50', label: 'GCoins'),
                       ],
                     ),
                   ),
