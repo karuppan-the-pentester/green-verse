@@ -15,7 +15,7 @@ class Splash_Screen extends StatelessWidget {
       items: const [
         IntroductionSliderItem(
           logo: Image(
-              image: AssetImage(SSCommunity) , height: 400),
+              image: AssetImage(SSCalc) , height: 400),
           title: Text.rich(
               TextSpan(
                   text: 'Carbon ',
@@ -41,7 +41,7 @@ class Splash_Screen extends StatelessWidget {
           subtitle: Text.rich(
               TextSpan(
                   text:
-                      'Calculate your emission and control the pollution!\n know your area’s status by ',
+                      'Calculate your emission and control the \npollution! know your area’s status by ',
                   style: TextStyle(
                     fontSize: 16,
                     fontFamily: 'RedHatText',
