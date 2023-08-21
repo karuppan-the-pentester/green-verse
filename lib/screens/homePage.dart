@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
   final List _pageList = [
     const DashboardPage(),
     const GmartPage(),
-    const CommunityPage(),
+    CommunityPage(),
     const LibraryPage() ,
     Profile_Page()
   ];

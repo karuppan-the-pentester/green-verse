@@ -142,11 +142,11 @@ class Splash_Screen extends StatelessWidget {
           backgroundColor: Colors.white,
         ),
       ],
-      done: Done(
+      done: const Done(
         child: Icon(Icons.done),
         home: LandingPage(),
       ),
-      next: Next(
+      next: const Next(
         child: Icon(
           Icons.arrow_forward,
           color: Color(0xFF2BC193),
@@ -154,9 +154,9 @@ class Splash_Screen extends StatelessWidget {
         curve: Curves.easeInOut,
         animationDuration: Duration(milliseconds: 350),
       ),
-      back: Back(child: Icon(Icons.arrow_back)),
+      back: const Back(child: Icon(Icons.arrow_back)),
       dotIndicator: DotIndicator(
-          selectedColor: Color(0xFF2BC193),
+          selectedColor: const Color(0xFF2BC193),
           unselectedColor: Colors.grey.withOpacity(0.5),
           size: 8.0),
     );
