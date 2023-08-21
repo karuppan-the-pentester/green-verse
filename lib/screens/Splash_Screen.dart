@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greenverse/screens/landingPage.dart';
 import 'package:introduction_slider/introduction_slider.dart';
 import 'package:greenverse/constants/images_Var.dart';
 import './Profile_Page.dart';
@@ -143,7 +144,7 @@ class Splash_Screen extends StatelessWidget {
       ],
       done: Done(
         child: Icon(Icons.done),
-        home: Profile_Page(),
+        home: LandingPage(),
       ),
       next: Next(
         child: Icon(

@@ -1,72 +1,76 @@
 import 'package:flutter/material.dart';
 import 'package:greenverse/constants/images_Var.dart';
+import 'package:greenverse/screens/communityPage.dart';
+import 'package:greenverse/screens/dashboardPage.dart';
+import 'package:greenverse/screens/gmartPage.dart';
+import 'package:greenverse/screens/libraryPage.dart';
 
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    theme: ThemeData(primaryColor: Colors.green),
+    theme: ThemeData(primaryColor: Color(0xFF2BC193)),
     home: Profile_Page(),
   ));
 }
 
-class Profile_Page extends StatefulWidget {
-  @override
-  _Profile_PageState createState() => _Profile_PageState();
-}
+// class Profile_Page extends StatefulWidget {
+//   @override
+//   _Profile_PageState createState() => _Profile_PageState();
+// }
 
-class _Profile_PageState extends State<Profile_Page> {
-  int _currentIndex = 4;
+// class _Profile_PageState extends State<Profile_Page> {
+//   int _currentIndex = 4;
+//
+//   final List<Widget> _pages = [
+//     const DashboardPage(),
+//     const GmartPage(),
+//     const CommunityPage(),
+//     const LibraryPage() ,
+//     GVProfilePage()
+//   ];
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       body: _pages[_currentIndex],
+//       bottomNavigationBar: BottomNavigationBar(
+//         currentIndex: _currentIndex,
+//         selectedItemColor: Color(0xFF2BC193),
+//         unselectedItemColor: Colors.black,
+//         type: BottomNavigationBarType.fixed,
+//         onTap: (index) {
+//           setState(() {
+//             _currentIndex = index;
+//           });
+//         },
+//         items: const [
+//           BottomNavigationBarItem(
+//             icon: Icon(Icons.home),
+//             label: 'Dashboard',
+//           ),
+//           BottomNavigationBarItem(
+//             icon: Icon(Icons.shopping_bag),
+//             label: 'Market',
+//           ),
+//           BottomNavigationBarItem(
+//             icon: Icon(Icons.groups_rounded),
+//             label: 'Community',
+//           ),
+//           BottomNavigationBarItem(
+//             icon: Icon(Icons.library_books_sharp),
+//             label: 'Resource',
+//           ),
+//           BottomNavigationBarItem(
+//             icon: Icon(Icons.account_circle),
+//             label: 'Profile',
+//           ),
+//         ],
+//       ),
+//     );
+//   }
+// }
 
-  final List<Widget> _pages = [
-    const PlaceholderPage(color: Colors.blue),
-    const PlaceholderPage(color: Colors.green),
-    const PlaceholderPage(color: Colors.orange),
-    const PlaceholderPage(color: Colors.purple),
-    GVProfilePage(),
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: _pages[_currentIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex,
-        selectedItemColor: Colors.green,
-        unselectedItemColor: Colors.black,
-        type: BottomNavigationBarType.fixed,
-        onTap: (index) {
-          setState(() {
-            _currentIndex = index;
-          });
-        },
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Dashboard',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_bag),
-            label: 'Market',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.groups_rounded),
-            label: 'Community',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.library_books_sharp),
-            label: 'Resource',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle),
-            label: 'Profile',
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class GVProfilePage extends StatelessWidget {
+class Profile_Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -115,6 +119,7 @@ class GVProfilePage extends StatelessWidget {
                         ProfileStatWidget(
                           count: '10',
                           label: 'Followers',
+
                         ),
                         ProfileStatWidget(count: '20', label: 'Following'),
                         ProfileStatWidget(count: '50', label: 'GCoins'),
@@ -128,14 +133,29 @@ class GVProfilePage extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Text(
-                'Jagannath E',
+                'Jegannath E',
                 style: TextStyle(
-                  fontSize: 24.0,
+                  fontSize: 20.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ),
-            const SizedBox(height: 15.0),
+            const SizedBox(height: 10.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
+              child: Text(
+                "Description",
+                style: const TextStyle(
+                  fontFamily: "Inter",
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500,
+                  color: Color(0xff2bc193),
+                  height: 17/14,
+                ),
+                textAlign: TextAlign.left,
+              )
+            ),
+            const SizedBox(height: 5.0),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Text(
@@ -154,7 +174,7 @@ class GVProfilePage extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.green,
+                    primary: Color(0xFF2BC193),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8.0),
                     ),
@@ -228,7 +248,7 @@ class GVProfilePage extends StatelessWidget {
                   onPressed: () {
                     // Handle creating a new post
                   },
-                  backgroundColor: Colors.green,
+                  backgroundColor: Color(0xFF2BC193),
                   child: const Icon(Icons.add, color: Colors.white),
                 ),
               ),

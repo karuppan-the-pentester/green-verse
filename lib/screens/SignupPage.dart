@@ -1,31 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:greenverse/constants/images_Var.dart';
 import 'package:greenverse/screens/homePage.dart';
-
-
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+class SignupPage extends StatefulWidget {
+  const SignupPage({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<SignupPage> createState() => _SignupPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
-  bool isFocused = false;
+class _SignupPageState extends State<SignupPage> {
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
     return Scaffold(
         body: SafeArea(
-      child: Stack(
-
-          children: [
+      child: Stack(children: [
         Positioned(
             bottom: 0,
             child: Image.asset(
-              landbg,
+              "assets/landbg.png",
               width: screenSize.width,
-
             )),
         Padding(
           padding:
@@ -36,7 +29,7 @@ class _LoginPageState extends State<LoginPage> {
             children: [
               SizedBox(
                 width: screenSize.width,
-                child: Text('Login',
+                child: Text('Sign Up',
                     style: TextStyle(
                       fontSize: 30,
                       fontFamily: 'RedHatText',
@@ -45,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
                     )),
               ),
               Image.asset(
-                Loginanim,
+                "assets/Loginanim.gif",
                 width: screenSize.width * 0.9,
               ),
               Column(
@@ -53,7 +46,6 @@ class _LoginPageState extends State<LoginPage> {
                 children: [
                   TextField(
                     obscureText: false,
-                    focusNode: FocusNode(),
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8),
@@ -72,7 +64,7 @@ class _LoginPageState extends State<LoginPage> {
                             BorderSide(width: 3, color: Colors.greenAccent),
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      labelText: 'Password',
+                      labelText: 'Create Password',
                     ),
                   ),
                   SizedBox(
@@ -98,7 +90,7 @@ class _LoginPageState extends State<LoginPage> {
                       );
                     },
                     child: Text(
-                      'Log in',
+                      'Sign up',
                       style: TextStyle(fontSize: 18, fontFamily: 'Inter'),
                     ),
                   ),

@@ -93,6 +93,23 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
 
   assets:
+    - assets/
     - assets/splash_screen_img/
     - assets/Gallery/
-    - assets/
+    - assets/products/
+    - fonts/
+
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: fonts/Inter-SemiBold.ttf
+          weight: 600
+    - family: RedHatText
+      fonts:
+        - asset: fonts/RedHatText-Medium.ttf
+          weight: 500
