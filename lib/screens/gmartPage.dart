@@ -37,11 +37,11 @@ class _GmartPageState extends State<GmartPage> {
                     enabledBorder: new OutlineInputBorder(
                         borderRadius: new BorderRadius.circular(8.0),
                         borderSide:
-                            BorderSide(color: Color(0xFF2BC193), width: 2.5)),
+                        BorderSide(color: Color(0xFF2BC193), width: 2.5)),
                     focusedBorder: new OutlineInputBorder(
                       borderRadius: new BorderRadius.circular(8.0),
                       borderSide:
-                          BorderSide(color: Color(0xFF2BC193), width: 2.5),
+                      BorderSide(color: Color(0xFF2BC193), width: 2.5),
                     ),
                   ),
                 ),
@@ -52,11 +52,11 @@ class _GmartPageState extends State<GmartPage> {
                     scrollDirection: Axis.vertical,
                     shrinkWrap: true,
                     gridDelegate:
-                        const SliverGridDelegateWithMaxCrossAxisExtent(
-                            maxCrossAxisExtent: 200,
-                            childAspectRatio: 1.5 / 2.3,
-                            crossAxisSpacing: 20,
-                            mainAxisSpacing: 20),
+                    const SliverGridDelegateWithMaxCrossAxisExtent(
+                        maxCrossAxisExtent: 200,
+                        childAspectRatio: 1.5 / 2.3,
+                        crossAxisSpacing: 20,
+                        mainAxisSpacing: 20),
                     itemCount:10,
                     itemBuilder: (BuildContext ctx, index) {
                       return ProductCard();
@@ -119,7 +119,7 @@ class ProductCard extends StatelessWidget {
           ),
           Padding(
             padding:
-                const EdgeInsets.only(left: 8, right: 8, top: 2, bottom: 2),
+            const EdgeInsets.only(left: 8, right: 8, top: 2, bottom: 2),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -134,7 +134,7 @@ class ProductCard extends StatelessWidget {
                   ),
                 ),
                 Row
-                (mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  (mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
                       '\₹500',
